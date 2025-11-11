@@ -7,6 +7,6 @@ jobs:
   publish_preview_update:
     name: Publish preview update
     type: update
-    environment: preview
+    environment: ${{ github.ref_name == 'main' && 'development' || 'preview' }}
     params:
-      channel: preview
+      branch: ${{ github.ref_name || "test" }}
