@@ -11,3 +11,4 @@ jobs:
       channel: preview
       env:
         APP_ENV: preview
+        API_URL: https://preview-api.example.com
