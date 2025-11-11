@@ -7,8 +7,6 @@ jobs:
   publish_preview_update:
     name: Publish preview update
     type: update
+    environment: preview
     params:
       channel: preview
-      env:
-        APP_ENV: preview
-        API_URL: https://preview-api.example.com
