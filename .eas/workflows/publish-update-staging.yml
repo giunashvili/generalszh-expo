@@ -1,0 +1,12 @@
+name: Publish preview on Staging
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  publish_preview_update:
+    name: Publish preview update
+    type: update
+    environment: development
+    params:
+      branch: ${{ github.ref_name }}
