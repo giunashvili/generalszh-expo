@@ -20,6 +20,8 @@ export default function HomeScreen() {
     >
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Generals: Zero Hour</ThemedText>
+        <ThemedText type="title">---</ThemedText>
+        <ThemedText type="title">{process.env.EXPO_PUBLIC_APP_NAME}</ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );
